@@ -4,9 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "prod": "npm run clean && NODE_ENV=production webpack -p",
-    "clean": "rimraf ./dist/*",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "prod": "yarn run clean && NODE_ENV=production webpack -p",
+    "clean": "rimraf ./dist/*"
   },
   "author": "",
   "license": "ISC",
